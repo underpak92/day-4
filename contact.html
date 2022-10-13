@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <!-- navbar muali -->
+    <nav>
+        <div>
+            <Ul>
+                <li>
+                    <img src="aset/gambar2.jpg">
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </Ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <!-- navbar akhir -->
+    <div class="container1">
+        <form style="margin: 0 auto;">
+            <div>
+                <h1 class="judul">GET IN TOUCH</h1>
+                <label for="input_name">Name</label>
+                <input height="50" type="text" placeholder="Your Name" id="input_name" required>
+            </div>
+            <div>
+                <label for="input_email">Email</label>
+                <input type="email" placeholder="Your Email" id="input_email" required>
+            </div>
+            <div>
+                <label for="input_phone">Phone</label>
+                <input type="text" placeholder="Your number" id="input_phone" required>
+            </div>
+            <div>
+                <label for="input_subject">Submit</label>
+                <select class="option" id="input_subject">
+                    <option value="" hidden>select</option>
+                    <option>frontend</option>
+                    <option>fullstack</option>
+                    <option>backend</option>
+                </select>
+            </div>
+            <div>
+                <label for="input_message">Your Message</label>
+                <textarea rows="5" cols="60" placeholder="Your Message..." id="input_message"></textarea>
+            </div>
+            <div>
+                <button onclick="ShowData()">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="contact.js"></script>
+</html>
